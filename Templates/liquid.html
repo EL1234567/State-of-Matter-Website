@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+h2{
+    color: red;
+    text-alignment:center;
+}
+h1{
+    color:black;
+    text-align: center;
+}
+body{
+    background-color: bisque;
+    text-align: center;
+
+}
+.menu ul{
+    display: inline-flex;
+  }
+  .menu ul li{
+    list-style: none;
+    margin-left: 7px;
+  }
+  .menu ul li:first-child{
+    margin-left: 0px;
+  }
+  .menu ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  .menu ul li a:hover{
+    background: #fff;
+    color: black;
+  }
+</style>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>GAS</title>
+</head>
+<body>
+<div class="def">
+<h1>What is Liquid?</h1>
+<p> liquid is a nearly incompressible fluid that conforms to the shape of its container but retains a constant volume independent of pressure. As such, it is one of the four fundamental states of matter, and is the only state with a definite volume but no fixed shape.</p>
+</div>
+<h2>Examples of Liquid Matter</h2>
+<ul>
+	<li>Water</li>
+    <li>Milk.</li>
+    <li>Blood.</li>
+    <li>Urine.</li>
+    <li>Gasoline.</li>
+    <li>Mercury (an element)</li>
+    <li>Bromine (an element)</li>
+    <li>Wine.</li>
+</ul>
+<h4>Menu</h4>
+<ul class="menu">
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('liquid') }}">Liquid</a></li>
+            <li><a href="{{ url_for('solid') }}">Solid</a></li>
+            <li><a href="{{ url_for('plasma') }}">Plasma</a></li>
+            
+          </ul>
+</body>
+</html>

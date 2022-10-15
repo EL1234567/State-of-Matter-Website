@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+h2{
+    color: red;
+    text-alignment:center;
+}
+h1{
+    color:black;
+    text-align: center;
+}
+body{
+    background-color: bisque;
+    text-align: center;
+
+}
+.menu ul{
+    display: inline-flex;
+  }
+  .menu ul li{
+    list-style: none;
+    margin-left: 7px;
+  }
+  .menu ul li:first-child{
+    margin-left: 0px;
+  }
+  .menu ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  .menu ul li a:hover{
+    background: #fff;
+    color: black;
+  }
+</style>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>GAS</title>
+</head>
+<body>
+<div class="def">
+<h1>What is Solid?</h1>
+<p> Solid is one of the four fundamental states of matter. The molecules in a solid are closely packed together and contain the least amount of kinetic energy. A solid is characterized by structural rigidity and resistance to a force applied to the surface. .</p>
+</div>
+<h2>Examples of Solid</h2>
+<ul>
+	<li>bricks and other building materials, like concrete, wood and glass;</li>
+    <li> dry ice or frozen carbon dioxide;
+    <li> ice;</li>
+    <li>ice;</li>
+    <li> most metals;</li>
+    <li> welding arcs.</li>
+    <li> most minerals;</li>
+    <li>rocks; and.
+     <li>   salt</li>
+    
+</ul>
+<h4>Menu</h4>
+<ul class="menu">
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('liquid') }}">Liquid</a></li>
+            <li><a href="{{ url_for('solid') }}">Solid</a></li>
+            <li><a href="{{ url_for('plasma') }}">Plasma</a></li>
+            
+          </ul>
+</body>
+</html>
